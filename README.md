@@ -3,4 +3,4 @@
 
 ## Gestion de quiosco. 
 + Sistemas utilizados en empresas con gestion de calidad.
-![](https://raw.githubusercontent.com/RodrigoLarroca/CRUD_PythonMySQ/main/crud_phpsql.webp)
+![](https://raw.githubusercontent.com/RodrigoLarroca/CRUD_PythonMySQL/main/CrudPythonMySQL.webp)
