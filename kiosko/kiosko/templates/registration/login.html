@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block titulo %} Iniciar sesión {% endblock %}
+
+{% block contenido %}
+
+<div class="container mt-5">
+    <form action="" method="post" class="col-md-6 offset-md-3">
+        {% csrf_token %}
+        
+        <div class="mb-3">
+            <label for="username" class="form-label">Nombre de usuario</label>
+            <input type="text" name="username" id="username" class="form-control" placeholder="Nombre de usuario">
+        </div>
+
+        <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" name="password" id="password" class="form-control" placeholder="********">
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Entrar</button>
+    </form>
+</div>
+
+{% endblock %}

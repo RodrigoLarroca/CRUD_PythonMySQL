@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block titulo %} Inicio {% endblock %}
+
+{% block contenido %}  
+    
+<div class="row align-items-md-stretch">
+    <div class="col-md-12">
+        <div
+            class="h-100 p-5 text-white bg-primary border rounded-3"
+        >
+            <h2>Bienvenido {{user.username | upper }} a gestion de productos</h2>
+            <br>
+            {% if request.user.is_authenticated %}
+            <a
+            name=""
+            id=""
+            class="btn btn-dark"
+            href="{% url 'productos' %}"
+            role="button"
+            >Ver productos</a>
+            {% else %}
+            <h5>Inicie sesión para continuar</h5>
+            {% endif %}
+    </div>
+</div>
+
+{% endblock %}
